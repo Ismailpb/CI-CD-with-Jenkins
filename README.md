@@ -29,7 +29,7 @@ unzip packer_1.7.5_linux_amd64.zip
 mv packer /usr/bin/
 
 ```
-Once the ansible installatio completed, we can now install git and Jenkins on the deployment server. Please note that the entire installation is done on the deployment server
+Once the ansible installation completed, we can now install git and Jenkins on the deployment server. Please note that the entire installation is done on the deployment server
 
 ```
 amazon-linux-extras install epel -y
@@ -45,8 +45,9 @@ yum install git -y
 If the installation completed, we can access the jenkins using the deplyment server ip:8080.
 ```
 13.233.84.215:8080
-
 ```
+![image](https://github.com/Ismailpb/CI-CD-with-Jenkins/blob/fe44b1cb31b2c698bb21e4a150fd52f3af93c14d/Screenshot%20from%202022-01-26%2001-22-30.png)
+
 We can cat the file mentioned in the browser to login to the jenkins.
 ```
 # cat /var/lib/jenkins/secrets/initialAdminPassword
@@ -56,6 +57,9 @@ We can cat the file mentioned in the browser to login to the jenkins.
 
 Once we logged in to the jenkin console, it will ask to customize the jenkins. Here we need to choose "Install Suggested Plugins" and it will take sme time to get completed.
 
+![image](https://github.com/Ismailpb/CI-CD-with-Jenkins/blob/fe44b1cb31b2c698bb21e4a150fd52f3af93c14d/Screenshot%20from%202022-01-26%2001-25-53.png)
+
+If the installation completed, it will display to craete username and password for our jenkins
 
 
 
